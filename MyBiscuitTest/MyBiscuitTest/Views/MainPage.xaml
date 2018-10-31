@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyBiscuitTest.Views.MainPage"
+             Title="{Binding Title}"
+             BackgroundColor="{Binding BgColor}">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="{Binding Text}" />
+        <Entry Text="{Binding Text}"/>
+        <Button Text="Griller le biscuit" Command="{Binding ChangeColorToBurnCommand}" />
+        <Button Text="Aller à Cornichon" Command="{Binding GoToCornichonPageCommand}"></Button>
+    </StackLayout>
+
+</ContentPage>
